@@ -24,6 +24,7 @@ app.use(express.urlencoded({ extended: true }))
 
 // 3. RUTEO
 app.use("/", require("./routes/index"))
+app.use("/auth", require("./routes/auth"))
 
 
 
