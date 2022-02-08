@@ -10,11 +10,14 @@ const authController		= require("./../controllers/authController")
 // A1. SIGNUP - OBTENER PÁGINA
 router.get("/register", authController.register)
 
-// A2. SIGNUP - ENVIAR FORMULARIO
+// A2. SIGNUP - ENVIAR FORMULARIO DE SIGNUP
 router.post("/register", authController.registerForm)
 
-// B. LOGIN - OBTENER PÁGINA
+// B1. LOGIN - OBTENER PÁGINA
 router.get("/login", authController.login)
+
+// B2. LOGIN - ENVIAR FORMULARIO DE LOGIN
+router.post("/login", authController.loginForm)
 
 
 
